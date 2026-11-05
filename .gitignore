@@ -1,3 +1,5 @@
 private.pem
 .todo
 .env
+.vscode
+.idea
