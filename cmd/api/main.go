@@ -1,14 +1,17 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
 	"auth-service/internal/auth"
 	"auth-service/internal/handlers"
+
 )
 
 func main() {
+	fmt.Println("Initializing WRY service...")
 	tokenMgr, err := auth.NewTokenManager(
 		"certs/private.pem",
 		"certs/public.pem",
